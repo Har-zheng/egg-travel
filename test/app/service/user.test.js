@@ -5,6 +5,6 @@ describe('service  user test', () => {
     const ctx = app.mockContext();
     const user = await ctx.service.user.detail(10);
     assert(user);
-    assert(user.id === 10)
+    assert(user.id === 10);
   });
 });

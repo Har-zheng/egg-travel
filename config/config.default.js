@@ -22,6 +22,14 @@ module.exports = appInfo => {
       enable: false,
     },
   };
+  config.view = {
+    mapping: {
+      '.html': 'ejs',
+    },
+  };
+  config.ejs = {
+    // delimiter: '$',  修改ejs  表达符号
+  };
 
   // add your user config here
   const userConfig = {

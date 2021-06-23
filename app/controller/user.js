@@ -4,7 +4,8 @@ const Controller = require('egg').Controller;
 class UseController extends Controller {
   async index() {
     const { ctx } = this;
-    ctx.body = 'user index zhz 321';
+    // ctx.body = 'user index zhz 321';
+    await ctx.render('user.html', { id: 100, name: 'admin', lists: [ 'java', 'php', 'ts' ] });
   }
   async lists() {
     const { ctx } = this;
