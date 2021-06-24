@@ -5,7 +5,21 @@ class UseController extends Controller {
   async index() {
     const { ctx } = this;
     // ctx.body = 'user index zhz 321';
-    await ctx.render('user.html', { id: 100, name: 'admin', lists: [ 'java', 'php', 'ts' ] });
+    await ctx.render('user.html', {
+      id: 100, name: 'admin',
+      // eslint-disable-next-line array-bracket-spacing
+      lists: ['java', 'php', 'ts'],
+    });
+  }
+  async login() {
+    const { ctx } = this;
+    const body = ctx.request.body;
+    console.log(ctx.request.body);
+    ctx.cookies.set('user', JSON.stringify(body));
+    ctx.body = {
+      status: 200,
+      data: body,
+    };
   }
   async lists() {
     const { ctx } = this;
