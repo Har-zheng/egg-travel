@@ -6,28 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>user</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/user.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/user.css" />
 </head>
 
 <body>
   <% include user-header.html %>
-  user page ...
-  <br />
-  <button onclick="login()">登录</button>
-  <button onclick="logout()">注销</button>
-  <br />
-  id: <%= id %>
+    user page ...
     <br />
-    <%# 注释 %>
-      name: <%= name %>
-        <ul>
-          <% for(var i=0; i<lists.length; i++) {%>
-            <li  id="user">
-              <%= lists[i] %>
-            </li>
-            <% } %>
-        </ul>
-        <img src="assets/img/img.webp" alt="" srcset="">
+    <button onclick="login()">登录</button>
+    <button onclick="logout()">注销</button>
+    <br />
+    id: <%= id %>
+      <br />
+      <%# 注释 %>
+        name: <%= name %>
+          <% if(user){%>
+            登录成功<%= user.name %>
+              <% } else {%>
+                未登录
+                <% } %>
+
+                  <ul>
+                    <% for(var i=0; i<lists.length; i++) {%>
+                      <li id="user">
+                        <%= lists[i] %>
+                      </li>
+                      <% } %>
+                  </ul>
+                  <img src="assets/img/img.webp" alt="" srcset="">
 </body>
 <script src="assets/js/user.js"></script>
 

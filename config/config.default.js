@@ -38,6 +38,12 @@ module.exports = appInfo => {
     prefix: '/assets/',
     dir: path.join(appInfo.baseDir, 'app/assets'),
   };
+  config.session = {
+    key: 'MUKE_SESS',
+    httpOnly: true,
+    maxAge: 1000 * 5,
+    renew: true,
+  };
 
   // add your user config here
   const userConfig = {
