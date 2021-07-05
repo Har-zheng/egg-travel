@@ -41,7 +41,7 @@ module.exports = appInfo => {
   config.session = {
     key: 'MUKE_SESS',
     httpOnly: true,
-    maxAge: 1000 * 5,
+    maxAge: 1000 * 50,
     renew: true,
   };
 

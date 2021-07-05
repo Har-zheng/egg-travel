@@ -29,6 +29,7 @@ class UseController extends Controller {
     // 保存session
     ctx.session.user = body;
     ctx.session.zh = '宏振';
+    ctx.session.test = 'test';
 
     ctx.body = {
       status: 200,
