@@ -16,7 +16,9 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1623855408271_1789';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = [ 'httpLog' ];
+
+
   config.security = {
     csrf: {
       enable: false,
