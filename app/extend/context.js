@@ -6,6 +6,6 @@ module.exports = {
       return key ? this.query[key] : this.query;
     }
     // 非 get
-    return key ? this.request.body[key] : this.request.body();
+    return key ? this.request.body[key] : this.request.body;
   },
 };
