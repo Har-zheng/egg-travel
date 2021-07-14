@@ -48,6 +48,9 @@ module.exports = appInfo => {
     maxAge: 1000 * 50,
     renew: true,
   };
+  config.auth = {
+    exclude: [ '/home', '/user', '/login', '/logout' ],
+  };
 
   // add your user config here
   const userConfig = {

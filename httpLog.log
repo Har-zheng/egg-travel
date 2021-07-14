@@ -77,3 +77,13 @@
 2021-07-12 23:23:37 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2021-07-12  23:23:37","entTime":"2021-07-1223:23:37","timeLength":23}
 2021-07-12 23:23:53 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2021-07-12  23:23:53","entTime":"2021-07-1223:23:53","timeLength":18}
 2021-07-12 23:23:57 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2021-07-12  23:23:57","entTime":"2021-07-1223:23:57","timeLength":9}
+2021-07-14 23:32:45 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2021-07-14  23:32:45","entTime":"2021-07-1423:32:45","timeLength":31}
+2021-07-14 23:33:05 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2021-07-14  23:33:05","entTime":"2021-07-1423:33:05","timeLength":45}
+2021-07-14 23:35:01 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2021-07-14  23:35:01","entTime":"2021-07-1423:35:01","timeLength":20}
+2021-07-14 23:36:04 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2021-07-14  23:36:04","entTime":"2021-07-1423:36:04","timeLength":14}
+2021-07-14 23:36:07 [httpLog] {"method":"GET","url":"/newResponse","data":{},"startTime":"2021-07-14  23:36:07","entTime":"2021-07-1423:36:07","timeLength":10}
+2021-07-14 23:43:24 [httpLog] {"method":"GET","url":"/login","data":{},"startTime":"2021-07-14  23:43:24","entTime":"2021-07-1423:43:24","timeLength":6}
+2021-07-14 23:43:26 [httpLog] {"method":"GET","url":"/login","data":{},"startTime":"2021-07-14  23:43:26","entTime":"2021-07-1423:43:26","timeLength":7}
+2021-07-14 23:43:33 [httpLog] {"method":"GET","url":"/home","data":{},"startTime":"2021-07-14  23:43:33","entTime":"2021-07-1423:43:33","timeLength":1}
+2021-07-14 23:43:35 [httpLog] {"method":"GET","url":"/home","data":{},"startTime":"2021-07-14  23:43:35","entTime":"2021-07-1423:43:35","timeLength":1}
+2021-07-14 23:45:08 [httpLog] {"method":"GET","url":"/user","data":{},"startTime":"2021-07-14  23:45:08","entTime":"2021-07-1423:45:08","timeLength":112}
