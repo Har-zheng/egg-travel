@@ -47,13 +47,15 @@ class UseController extends Controller {
     };
   }
   async lists() {
-    const { ctx } = this;
-    await new Promise(resolve => {
-      setTimeout(() => {
-        resolve();
-      }, 1500);
-    });
-    ctx.body = [{ id: 1234 }];
+    const { ctx, app } = this;
+    // console.log(app.mysql);
+    // await new Promise(resolve => {
+    //   setTimeout(() => {
+    //     resolve();
+    //   }, 1500);
+    // });
+    const res = await ctx.service.user.lists();
+    ctx.body = res;
   }
   async detail() {
     const { ctx } = this;
@@ -63,20 +65,23 @@ class UseController extends Controller {
   }
   async detail2() {
     const { ctx } = this;
-    console.log(ctx.query);
-    ctx.body = ctx.params.id;
+    console.log(ctx.params);
+    const res = await ctx.service.user.detail2(ctx.params.id);
+    ctx.body = res;
   }
   async add() {
     const { ctx } = this;
-    console.log(ctx);
-    const rule = {
-      name: { type: 'string' },
-      age: { type: 'number' },
-    };
-    ctx.validate(rule);
+    console.log(ctx.request.body);
+    // const rule = {
+    //   name: { type: 'string' },
+    //   age: { type: 'number' },
+    // };
+    // ctx.validate(rule);
+    const res = await ctx.service.user.add(ctx.request.body);
+    console.log(res);
     ctx.body = {
       status: 200,
-      data: ctx.request.body,
+      data: res,
     };
   }
   async edit() {

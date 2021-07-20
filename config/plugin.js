@@ -9,10 +9,14 @@ exports.ejs = {
   package: 'egg-view-ejs',
 };
 exports.auth = {
-  enable: true,
+  enable: false,
   path: path.join(__dirname, '../lib/plugin/egg-auth'),
 };
 exports.info = {
   enable: true,
   path: path.join(__dirname, '../lib/plugin/egg-info'),
+};
+exports.mysql = {
+  enable: true,
+  path: 'egg-mysql',
 };
