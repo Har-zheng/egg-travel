@@ -47,20 +47,30 @@ class UseController extends Controller {
     };
   }
   async lists() {
-    const { ctx, app } = this;
+    const { ctx } = this;
     // console.log(app.mysql);
     // await new Promise(resolve => {
     //   setTimeout(() => {
     //     resolve();
     //   }, 1500);
     // });
-    const res = await ctx.service.user.lists();
+    // const res = await ctx.service.user.lists();
+
+    // const res = await ctx.model.User.findAll();
+    const res = await ctx.model.User.findAll({
+      // where: {
+      //   id: 9,
+      // },
+      limit: 1,
+      offset: 1,
+    });
     ctx.body = res;
   }
   async detail() {
     const { ctx } = this;
-    const res = ctx.service.user.detail(10);
-    console.log(res);
+    // const res = ctx.service.user.detail(10);
+    // console.log(res);
+    const res = await ctx.model.User.findByPk(ctx.query.id);
     ctx.body = res;
   }
   async detail2() {
@@ -86,11 +96,19 @@ class UseController extends Controller {
   }
   async edit() {
     const { ctx } = this;
-    ctx.body = ctx.request.body;
+    const res = await ctx.service.user.edit(ctx.request.body);
+    ctx.body = {
+      status: 200,
+      data: res,
+    };
   }
   async del() {
     const { ctx } = this;
-    ctx.body = 'del';
+    const res = await ctx.service.user.delete(ctx.request.body.id);
+    ctx.body = {
+      status: 200,
+      data: res,
+    };
   }
 }
 

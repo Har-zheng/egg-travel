@@ -40,6 +40,26 @@ class UserService extends Service {
 
     }
   }
+  async edit(params) {
+    try {
+      const { app } = this;
+      const res = await app.mysql.update('user', params);
+      return res;
+    } catch (error) {
+      console.log(error);
+
+    }
+  }
+  async delete(id) {
+    try {
+      const { app } = this;
+      const res = await app.mysql.delete('user', { id });
+      return res;
+    } catch (error) {
+      console.log(error);
+
+    }
+  }
 }
 
 module.exports = UserService;
