@@ -100,7 +100,7 @@ class UseController extends Controller {
     const { ctx } = this;
     // const res = await ctx.service.user.edit(ctx.request.body);
     // const res = await ctx.service.user.edit(ctx.request.body);
-    console.log(ctx.request.body);
+    console.log(ctx);
     const user = await ctx.model.User.findByPk(ctx.request.body.id);
     if (!user) {
       ctx.body = {

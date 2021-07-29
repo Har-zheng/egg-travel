@@ -225,3 +225,14 @@
 2021-07-28 00:16:14 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2021-07-28  00:16:14","entTime":"2021-07-2800:16:14","timeLength":17}
 2021-07-28 00:16:20 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2021-07-28  00:16:20","entTime":"2021-07-2800:16:20","timeLength":5}
 2021-07-28 00:16:22 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2021-07-28  00:16:22","entTime":"2021-07-2800:16:22","timeLength":83}
+2021-07-29 22:44:08 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2021-07-29  22:44:08","entTime":"2021-07-2922:44:08","timeLength":14}
+2021-07-29 22:44:48 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2021-07-29  22:44:48","entTime":"2021-07-2922:44:48","timeLength":27}
+2021-07-29 22:45:24 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2021-07-29  22:45:24","entTime":"2021-07-2922:45:24","timeLength":63}
+2021-07-29 22:45:25 [httpLog] {"method":"PUT","url":"/user/edit","data":{},"startTime":"2021-07-29  22:45:25","entTime":"2021-07-2922:45:25","timeLength":78}
+2021-07-29 22:45:34 [httpLog] {"method":"POST","url":"/user/edit","data":{},"startTime":"2021-07-29  22:45:34","entTime":"2021-07-2922:45:34","timeLength":20}
+2021-07-29 22:45:36 [httpLog] {"method":"POST","url":"/user/edit","data":{},"startTime":"2021-07-29  22:45:36","entTime":"2021-07-2922:45:36","timeLength":12}
+2021-07-29 22:46:24 [httpLog] {"method":"POST","url":"/user/edit","data":{},"startTime":"2021-07-29  22:46:24","entTime":"2021-07-2922:46:24","timeLength":33}
+2021-07-29 22:46:33 [httpLog] {"method":"POST","url":"/user/edit","data":{},"startTime":"2021-07-29  22:46:32","entTime":"2021-07-2922:46:33","timeLength":179}
+2021-07-29 22:50:51 [httpLog] {"method":"POST","url":"/user/edit","data":{"id":12,"name":"user12","pwd":"123456"},"startTime":"2021-07-29  22:50:51","entTime":"2021-07-2922:50:51","timeLength":6}
+2021-07-29 22:50:57 [httpLog] {"method":"PUT","url":"/user/edit","data":{"id":12,"name":"user12","pwd":"123456"},"startTime":"2021-07-29  22:50:57","entTime":"2021-07-2922:50:57","timeLength":113}
+2021-07-29 22:51:12 [httpLog] {"method":"PUT","url":"/user/edit","data":{"id":12,"name":"user12","pwd":"123456000"},"startTime":"2021-07-29  22:51:12","entTime":"2021-07-2922:51:12","timeLength":120}
