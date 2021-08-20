@@ -34,3 +34,4 @@
 2021-07-08 23:30:48 [httpLog] {"method":"GET","url":"/newApplication","data":{},"startTime":"2021-07-08  23:30:48","entTime":"2021-07-0823:30:48","timeLength":129}
 2021-07-08 23:38:35 [httpLog] {"method":"GET","url":"/newContent","data":{},"startTime":"2021-07-08  23:38:35","entTime":"2021-07-0823:38:35","timeLength":19}
 2021-07-08 23:38:47 [httpLog] {"method":"GET","url":"/newContent?id=321","data":{},"startTime":"2021-07-08  23:38:47","entTime":"2021-07-0823:38:47","timeLength":9}
+2021-07-12 17:02:17 [httpLog] {"method":"GET","url":"/","data":{},"startTime":"2021-07-12  17:02:17","entTime":"2021-07-1217:02:17","timeLength":7}
