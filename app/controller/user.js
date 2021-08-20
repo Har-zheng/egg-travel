@@ -48,44 +48,90 @@ class UseController extends Controller {
   }
   async lists() {
     const { ctx } = this;
-    await new Promise(resolve => {
-      setTimeout(() => {
-        resolve();
-      }, 1500);
+    // console.log(app.mysql);
+    // await new Promise(resolve => {
+    //   setTimeout(() => {
+    //     resolve();
+    //   }, 1500);
+    // });
+    // const res = await ctx.service.user.lists();
+
+    // const res = await ctx.model.User.findAll();
+    const res = await ctx.model.User.findAll({
+      where: {
+        id: 12,
+      },
     });
-    ctx.body = [{ id: 1234 }];
+    ctx.body = res;
   }
   async detail() {
     const { ctx } = this;
-    const res = ctx.service.user.detail(10);
-    console.log(res);
-    ctx.body = res;
+    // const res = ctx.service.user.detail(10);
+    // console.log(res);
+    const res = await ctx.model.User.findByPk(ctx.query.id);
+    ctx.body = {
+      status: 200,
+      res,
+    };
   }
   async detail2() {
     const { ctx } = this;
-    console.log(ctx.query);
-    ctx.body = ctx.params.id;
+    console.log(ctx.params);
+    const res = await ctx.service.user.detail2(ctx.params.id);
+    ctx.body = res;
   }
   async add() {
     const { ctx } = this;
-    console.log(ctx);
-    const rule = {
-      name: { type: 'string' },
-      age: { type: 'number' },
-    };
-    ctx.validate(rule);
+    console.log(ctx.request.body);
+    // const rule = {
+    //   name: { type: 'string' },
+    //   age: { type: 'number' },
+    // };
+    // ctx.validate(rule);
+    // const res = await ctx.service.user.add(ctx.request.body);
+    const res = await ctx.model.User.create(ctx.request.body);
+    console.log(res);
     ctx.body = {
       status: 200,
-      data: ctx.request.body,
+      data: res,
     };
   }
   async edit() {
     const { ctx } = this;
-    ctx.body = ctx.request.body;
+    // const res = await ctx.service.user.edit(ctx.request.body);
+    // const res = await ctx.service.user.edit(ctx.request.body);
+    console.log(ctx);
+    const user = await ctx.model.User.findByPk(ctx.request.body.id);
+    if (!user) {
+      ctx.body = {
+        status: 404,
+        errMsg: 'id 不存在',
+      };
+      return;
+    }
+    const res = await user.update(ctx.request.body);
+    ctx.body = {
+      status: 200,
+      data: res,
+    };
   }
   async del() {
     const { ctx } = this;
-    ctx.body = 'del';
+    // const res = await ctx.service.user.delete(ctx.request.body.id);
+    console.log(ctx.request.body);
+    const user = await ctx.model.User.findByPk(ctx.request.body.id);
+    if (!user) {
+      ctx.body = {
+        status: 404,
+        errMsg: 'id 不存在',
+      };
+      return;
+    }
+    const res = await user.destroy(ctx.request.body.id);
+    ctx.body = {
+      status: 200,
+      data: res,
+    };
   }
 }
 
