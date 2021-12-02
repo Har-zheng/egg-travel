@@ -236,3 +236,14 @@
 2021-07-29 22:50:51 [httpLog] {"method":"POST","url":"/user/edit","data":{"id":12,"name":"user12","pwd":"123456"},"startTime":"2021-07-29  22:50:51","entTime":"2021-07-2922:50:51","timeLength":6}
 2021-07-29 22:50:57 [httpLog] {"method":"PUT","url":"/user/edit","data":{"id":12,"name":"user12","pwd":"123456"},"startTime":"2021-07-29  22:50:57","entTime":"2021-07-2922:50:57","timeLength":113}
 2021-07-29 22:51:12 [httpLog] {"method":"PUT","url":"/user/edit","data":{"id":12,"name":"user12","pwd":"123456000"},"startTime":"2021-07-29  22:51:12","entTime":"2021-07-2922:51:12","timeLength":120}
+2021-12-02 15:09:05 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"zhz","password":"123456"},"startTime":"2021-12-02  15:09:05","entTime":"2021-12-0215:09:05","timeLength":33}
+2021-12-02 15:09:26 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"zhz","password":"123456"},"startTime":"2021-12-02  15:09:26","entTime":"2021-12-0215:09:26","timeLength":9}
+2021-12-02 15:39:16 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"zhz2","password":"123456"},"startTime":"2021-12-02  15:39:16","entTime":"2021-12-0215:39:16","timeLength":32}
+2021-12-02 15:49:36 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"zhz2","password":"123456"},"startTime":"2021-12-02  15:49:36","entTime":"2021-12-0215:49:36","timeLength":17}
+2021-12-02 15:49:54 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"zhz3","password":"123456"},"startTime":"2021-12-02  15:49:54","entTime":"2021-12-0215:49:54","timeLength":25}
+2021-12-02 15:52:20 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"zhz3","password":"123456"},"startTime":"2021-12-02  15:52:20","entTime":"2021-12-0215:52:20","timeLength":15}
+2021-12-02 15:52:25 [httpLog] {"method":"POST","url":"/api/user/register","data":{"username":"zhz5","password":"123456"},"startTime":"2021-12-02  15:52:25","entTime":"2021-12-0215:52:25","timeLength":23}
+2021-12-02 18:01:15 [httpLog] {"method":"POST","url":"/login","data":{"name":"user3","pwd":"123456"},"startTime":"2021-12-02  18:01:15","entTime":"2021-12-0218:01:15","timeLength":2}
+2021-12-02 18:04:28 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"user3","password":"123456"},"startTime":"2021-12-02  18:04:28","entTime":"2021-12-0218:04:28","timeLength":50}
+2021-12-02 18:04:33 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"zhz","password":"123456"},"startTime":"2021-12-02  18:04:33","entTime":"2021-12-0218:04:33","timeLength":5}
+2021-12-02 18:04:44 [httpLog] {"method":"POST","url":"/api/user/login","data":{"username":"zhz6","password":"123456"},"startTime":"2021-12-02  18:04:44","entTime":"2021-12-0218:04:44","timeLength":11}

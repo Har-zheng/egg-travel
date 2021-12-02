@@ -1,10 +1,12 @@
 -- 删除数据库
 drop database egg;
 
+-- 查看数据库
+show databases;
 -- 创建数据库
 create database egg;
 
--- 创建表 
+-- 创建表  使用
 use egg;
 
 create table user(
@@ -13,6 +15,7 @@ create table user(
   pwd varchar(50) not null comment '密码',
   primary key(id)
 )engine=InnoDB charset=utf8;
+
 
 --查看表
 show tables;

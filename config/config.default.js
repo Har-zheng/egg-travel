@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1623855408271_1789';
 
   // add your middleware config here
-  config.middleware = [ 'httpLog' ];
+  config.middleware = ['httpLog'];
   config.httpLog = {
     type: 'all',
   };
@@ -49,7 +49,7 @@ module.exports = appInfo => {
     renew: true,
   };
   config.auth = {
-    exclude: [ '/home', '/user', '/login', '/logout' ],
+    exclude: ['/home', '/user', '/login', '/logout'],
   };
   config.mysql = {
     app: true,
@@ -58,8 +58,8 @@ module.exports = appInfo => {
       host: '127.0.0.1',
       port: '3306',
       user: 'root',
-      password: '123456',
-      database: 'egg',
+      password: 'hongzhen123',
+      database: 'egg_house',
     },
   };
   config.sequelize = {
@@ -67,8 +67,8 @@ module.exports = appInfo => {
     host: '127.0.0.1',
     port: '3306',
     user: 'root',
-    password: '123456',
-    database: 'egg',
+    password: 'hongzhen123',
+    database: 'egg_house',
     define: {
       timestamps: false,
       freezeTableName: true,
@@ -78,6 +78,7 @@ module.exports = appInfo => {
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
+    salt: 'ZHZ'
   };
 
   return {
