@@ -49,7 +49,7 @@ module.exports = appInfo => {
     renew: true,
   };
   config.auth = {
-    exclude: ['/home', '/user', '/login', '/logout'],
+    exclude: ['/api/user/login', '/api/user/logout'],
   };
   config.mysql = {
     app: true,
@@ -74,11 +74,23 @@ module.exports = appInfo => {
       freezeTableName: true,
     },
   };
+  config.jwt = {
+    secret: 'ZHZ'
+  }
+  config.redis = {
+    client: {
+      port: 6379,          // Redis port
+      host: '127.0.0.1',   // Redis host
+      password: '123456',
+      db: 0,
+    },
+  }
 
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
-    salt: 'ZHZ'
+    salt: 'ZHZ',
+    redisExpire: 60 * 60 * 24
   };
 
   return {

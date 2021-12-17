@@ -21,7 +21,6 @@ class CurlController extends Controller {
         dataType: 'json',
       }
     );
-    console.log(res.data);
     ctx.body = res.data;
   }
 }

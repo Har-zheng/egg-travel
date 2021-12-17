@@ -3,7 +3,6 @@ module.exports = app => {
   const store = {};
   app.sessionStore = {
     async get(key) {
-      console.log('store', store);
       return store[key];
     },
     async set(key, value, _maxAge) {
@@ -13,5 +12,5 @@ module.exports = app => {
       store[key] = null
     }
   }
-  // app.config.coreMiddlewares.push('auth')
+  app.config.coreMiddlewares.push('auth')
 }

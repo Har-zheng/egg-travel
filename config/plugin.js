@@ -9,7 +9,7 @@ exports.ejs = {
   package: 'egg-view-ejs',
 };
 exports.auth = {
-  enable: false,
+  enable: true,
   path: path.join(__dirname, '../lib/plugin/egg-auth'),
 };
 exports.info = {
@@ -24,4 +24,12 @@ exports.mysql = {
 exports.sequelize = {
   enable: true,
   path: 'egg-sequelize',
+};
+exports.jwt = {
+  enable: true,
+  package: 'egg-jwt'
+};
+exports.redis = {
+  enable: true,
+  package: 'egg-redis',
 };
